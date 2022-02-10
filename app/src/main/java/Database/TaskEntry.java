@@ -9,14 +9,13 @@ import java.util.Date;
 @Entity(tableName = "task")
 public class TaskEntry {
 
-    // TODO (3) Annotate the id as PrimaryKey. Set autoGenerate to true.
     @PrimaryKey(autoGenerate = true)
     private int id;
     private String description;
     private int priority;
     private Date updatedAt;
 
-    // TODO (4) Use the Ignore annotation so Room knows that it has to use the other constructor instead
+
     @Ignore
     public TaskEntry(String description, int priority, Date updatedAt) {
         this.description = description;

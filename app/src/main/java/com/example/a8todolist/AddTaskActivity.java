@@ -47,6 +47,7 @@ public class AddTaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_task);
         initViews();
         mDb=AppDatabase.getInstance(getApplicationContext());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         initViews();
 

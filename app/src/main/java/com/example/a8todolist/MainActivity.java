@@ -98,6 +98,11 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         setUpViewModel();
     }
 
+    public void jobscheduling(View view)
+    {
+        Intent intent=new Intent(MainActivity.this,JobProductivity.class);
+        startActivity(intent);
+    }
 
 
     private void setUpViewModel() {
@@ -112,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         });
 
     }
+
 
     @Override
     public void onItemClickListener(int itemId) {
